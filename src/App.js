@@ -1,25 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import { Component } from "react";
+import Title from './Title'
+import Content from './Content'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default class App extends Component {
+	render() {
+		return (
+			<div>
+				<Title text="안녕하세요 새로운 프로젝트 입니다." />
+				<Content />
+			</div>
+		);
+	}
 }
-
-export default App;
